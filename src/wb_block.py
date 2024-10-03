@@ -1361,6 +1361,14 @@ class WbBlackBox(WbObject):
         res = "Address: " + hex(base) + " Name: " + name + "<br>"
         return res
 
+    
+    def gen_vhdl_map(self, base, name):
+        """do not generate anything as we are a black box
+        """        
+        res = ""
+        
+        return res
+
 
 class WbBlock(WbObject):
     def __init__(self, el):
